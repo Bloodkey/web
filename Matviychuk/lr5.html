@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Лаб №5</title>
+	<link rel="stylesheet" href="style.css" type="text/css"/>/
+</head>
+<body>
+	<script src="lr5.js"></script>
+	<div class="container">
+	<div class="header">
+  <div class="menu">Лабораторні роботи</a>
+  <div class="header-right">
+    <a href="index.html">Головна</a>
+    <a href="lr2.html">Лаб 2</a>
+    <a href="lr3.html">Лаб 3</a>
+    <a href="lr4.html">Лаб 4</a>
+    <a class = "active" href="lr5.html">Лаб 5</a>
+    <a href="lr6.html">Лаб 6</a>
+    <a href="lr7.html">Лаб 7</a>
+  </div>
+</div>
+</div>
+<div class="task wrap">
+		<div class="task_text">
+			<p class="task_title">Завдання 5</p>
+			<p>(Створити та підключити ваш файл *.js до сторінки. САМОМУ! написати скрипт, який перевірятиме хоча б два поля форми на правильність введення, наприклад, лише літери у полі ПІП</p>
+		</div>
+	</div>
+	<div class="container">
+	<form name="Regform" onsubmit="return checkForm()" method="post">
+    <p>Будь ласка заповніть форму</p>
+    <hr>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Введіть ім'я" name="name" id="name" required>
+
+    <label for="surn"><b>Прізвище</b></label>
+    <input type="text" placeholder="Введіть прізвище" name="surn" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Введіть email" name="emailaddress" required>
+
+    <label for="psw"><b>Пароль</b></label>
+    <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+    <label for="psw-repeat"><b>Повторіть пароль</b></label>
+    <input type="password" placeholder="Повторіть пароль" name="psw-repeat" required>
+    <hr>
+    <button type="submit" id="accept" class="registerbtn" >Прийняти</button>
+  </div>
+</form>
+</div>
+<script src="lr5.js"> </script>
+</body>	
+</html>
